@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover lovely gelato flavours at luvto. Little scoops, lots of love.">
+  <title>luvto. — Little Scoops, Lots of Love</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#home" aria-label="luvto home">luvto<span>.</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#menu">Flavours</a>
+      <a href="#story">Our story</a>
+      <a href="#visit" class="nav-cta">Find us <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> A little scoop of happiness</p>
+        <h1>Love at first<br><em>scoop.</em></h1>
+        <p class="hero-description">Little moments, lovely flavours. Find your new favourite scoop and make an ordinary day feel a little more special.</p>
+        <div class="hero-actions">
+          <a href="#menu" class="button button-dark">Explore our flavours <span>↗</span></a>
+          <a href="#story" class="text-link">Get to know us <span>→</span></a>
+        </div>
+        <div class="hero-note"><span class="note-star">✳</span><span>Made for sharing<br><strong>and savouring slowly.</strong></span></div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="hero-photo-wrap">
+          <img class="hero-photo" src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=1200&q=85" alt="Colourful scoops of ice cream" fetchpriority="high">
+        </div>
+        <div class="round-stamp"><span>GOOD<br>MOOD<br>GELATO</span><b>♡</b></div>
+        <span class="hero-caption">A little treat, a lot of joy.</span>
+      </div>
+    </section>
+
+    <div class="ticker" aria-label="Brand message"><span>GOOD DAYS START WITH GELATO</span><b>✳</b><span>A LITTLE SCOOP OF JOY</span><b>✳</b><span>MADE TO MAKE YOU SMILE</span><b>✳</b></div>
+
+    <section class="menu-section section-pad" id="menu">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Meet your new favourites</p>
+        <h2>A flavour for<br><em>every feeling.</em></h2>
+        <p>From familiar classics to playful little discoveries — which one will you try first?</p>
+      </div>
+      <div class="filter-row reveal" role="group" aria-label="Filter gelato flavours">
+        <button class="filter-btn active" data-filter="all">All flavours</button>
+        <button class="filter-btn" data-filter="classic">Classics</button>
+        <button class="filter-btn" data-filter="fruity">Fruity</button>
+        <button class="filter-btn" data-filter="signature">Signature</button>
+      </div>
+
+      <div class="flavour-grid" id="flavourGrid">
+        <article class="flavour-card reveal" data-category="classic">
+          <div class="flavour-image image-pink"><img src="https://images.unsplash.com/photo-1560008581-09826d1de69e?auto=format&fit=crop&w=750&q=85" alt="Vanilla ice cream" loading="lazy"><span class="image-label">THE CLASSIC</span></div>
+          <div class="flavour-info"><div><h3>Madagascar Vanilla</h3><p>Soft, creamy and beautifully timeless.</p></div><span class="price">RM 9</span></div>
+        </article>
+        <article class="flavour-card reveal" data-category="classic">
+          <div class="flavour-image image-blue"><img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=750&q=85" alt="Chocolate ice cream" loading="lazy"><span class="image-label">CHOCOLATE LOVERS</span></div>
+          <div class="flavour-info"><div><h3>Dark Chocolate</h3><p>Deep cocoa, rich and satisfying.</p></div><span class="price">RM 10</span></div>
+        </article>
+        <article class="flavour-card reveal" data-category="signature">
+          <div class="flavour-image image-green"><img src="https://images.unsplash.com/photo-1567206563064-6f60f40a2b57?auto=format&fit=crop&w=750&q=85" alt="Pistachio gelato" loading="lazy"><span class="image-label">A LITTLE LUXE</span></div>
+          <div class="flavour-info"><div><h3>Pistachio Dream</h3><p>Nutty, mellow and delightfully smooth.</p></div><span class="price">RM 12</span></div>
+        </article>
+        <article class="flavour-card reveal" data-category="fruity">
+          <div class="flavour-image image-peach"><img src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?auto=format&fit=crop&w=750&q=85" alt="Strawberry ice cream" loading="lazy"><span class="image-label">FRUITY FAVOURITE</span></div>
+          <div class="flavour-info"><div><h3>Strawberry Kiss</h3><p>Bright berry notes with a sweet finish.</p></div><span class="price">RM 10</span></div>
+        </article>
+        <article class="flavour-card reveal" data-category="signature">
+          <div class="flavour-image image-cream"><img src="https://images.unsplash.com/photo-1501446529957-6226bd447c46?auto=format&fit=crop&w=750&q=85" alt="Gelato cone" loading="lazy"><span class="image-label">CROWD PLEASER</span></div>
+          <div class="flavour-info"><div><h3>Cookies & Cream</h3><p>Silky cream with crunchy cookie bites.</p></div><span class="price">RM 11</span></div>
+        </article>
+        <article class="flavour-card reveal" data-category="fruity">
+          <div class="flavour-image image-yellow"><img src="https://images.unsplash.com/photo-1488900128323-21503983a07e?auto=format&fit=crop&w=750&q=85" alt="Fruit flavoured ice cream" loading="lazy"><span class="image-label">SUNSHINE IN A SCOOP</span></div>
+          <div class="flavour-info"><div><h3>Mango Sunshine</h3><p>A tropical-inspired little pick-me-up.</p></div><span class="price">RM 10</span></div>
+        </article>
+      </div>
+      <p class="menu-disclaimer">Menu, prices and photos are placeholders for this concept. Replace them with your actual products before publishing.</p>
+    </section>
+
+    <section class="story-section" id="story">
+      <div class="story-image reveal"><img src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?auto=format&fit=crop&w=1000&q=85" alt="A cheerful ice cream treat" loading="lazy"><span class="story-image-note">Little joys<br>live here ♡</span></div>
+      <div class="story-copy reveal">
+        <p class="eyebrow">A little about luvto</p>
+        <h2>Life is sweeter<br>with a little <em>luv.</em></h2>
+        <p>We believe the best moments don't have to be big. Sometimes, all you need is a favourite flavour, a good friend and one more scoop.</p>
+        <p>luvto is a little celebration of life's everyday joys — one lovely flavour, one shared smile, and one sweet memory at a time.</p>
+        <a class="button button-outline" href="#visit">Come say hello <span>↗</span></a>
+        <div class="story-values"><span><b>♡</b> Thoughtful flavours</span><span><b>✳</b> Little daily joys</span><span><b>↗</b> Share the luv</span></div>
+      </div>
+    </section>
+
+    <section class="visit-section section-pad" id="visit">
+      <p class="eyebrow">Your next happy place</p>
+      <h2>Good gelato.<br><em>Good company.</em></h2>
+      <p>Drop by for a scoop, bring a friend, and stay for the sweet little moments.</p>
+      <div class="visit-actions">
+        <a class="button button-dark" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Follow on Instagram <span>↗</span></a>
+        <a class="button button-outline" id="whatsappLink" href="https://wa.me/" target="_blank" rel="noopener noreferrer">Say hello on WhatsApp <span>↗</span></a>
+      </div>
+      <p class="replace-note">Add your real Instagram, WhatsApp, address and opening hours before going live.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="logo" href="#home">luvto<span>.</span></a>
+    <p>Little scoops, lots of love.</p>
+    <span>© <span id="year"></span> luvto. Made with ♡</span>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
